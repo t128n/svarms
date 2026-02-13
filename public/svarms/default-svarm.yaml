@@ -1,0 +1,215 @@
+locations:
+  - id: location-a
+    name: "Location A"
+    color: zinc-600
+    icon: factory
+    url: "https://example.com/locations/location-a"
+
+  - id: location-b
+    name: "Location B"
+    color: stone-600
+    icon: factory
+    url: "https://example.com/locations/location-b"
+
+  - id: location-c
+    name: "Location C"
+    color: neutral-600
+    icon: factory
+    url: "https://example.com/locations/location-c"
+
+people:
+  # Leaders - Same color as the team they lead
+  - id: klaus
+    name: "Klaus Weber"
+    location: location-a
+    color: sky-500
+    icon: user-star
+    url: "https://example.com/people/klaus"
+
+  - id: sabine
+    name: "Sabine Müller"
+    location: location-b
+    color: amber-500
+    icon: CircleUser
+    url: "https://example.com/people/sabine"
+
+  - id: dieter
+    name: "Dieter Schmidt"
+    location: location-c
+    color: violet-500
+    icon: CircleUser
+    url: "https://example.com/people/dieter"
+
+  - id: ursula
+    name: "Ursula Fischer"
+    location: location-a
+    color: emerald-500
+    icon: CircleUser
+    url: "https://example.com/people/ursula"
+
+  # Members - Same color as the team they belong to
+  # Team A Members (sky-500)
+  - id: maria
+    name: "Maria Schneider"
+    location: location-a
+    color: sky-500
+    icon: User
+    url: "https://example.com/people/maria"
+
+  - id: lisa
+    name: "Lisa Bauer"
+    location: location-b
+    color: sky-500
+    icon: User
+    url: "https://example.com/people/lisa"
+
+  - id: julia
+    name: "Julia Schmidt"
+    location: location-c
+    color: sky-500
+    icon: User
+    url: "https://example.com/people/julia"
+
+  # Team B Members (amber-500)
+  - id: thomas-m
+    name: "Thomas Müller"
+    location: location-a
+    color: amber-500
+    icon: User
+    url: "https://example.com/people/thomas-m"
+
+  - id: markus-h
+    name: "Markus Koch"
+    location: location-b
+    color: amber-500
+    icon: User
+    url: "https://example.com/people/markus-h"
+
+  - id: alex
+    name: "Alex Weber"
+    location: location-c
+    color: amber-500
+    icon: User
+    url: "https://example.com/people/alex"
+
+  # Team C Members (violet-500)
+  - id: anna-m
+    name: "Anna Wolf"
+    location: location-a
+    color: violet-500
+    icon: User
+    url: "https://example.com/people/anna-m"
+
+  - id: sarah
+    name: "Sarah Fischer"
+    location: location-b
+    color: violet-500
+    icon: User
+    url: "https://example.com/people/sarah"
+
+  - id: clara
+    name: "Clara Müller"
+    location: location-c
+    color: violet-500
+    icon: User
+    url: "https://example.com/people/clara"
+
+  # Team D Members (emerald-500)
+  - id: peter
+    name: "Peter Huber"
+    location: location-a
+    color: emerald-500
+    icon: User
+    url: "https://example.com/people/peter"
+
+  - id: michael
+    name: "Michael Meyer"
+    location: location-b
+    color: emerald-500
+    icon: User
+    url: "https://example.com/people/michael"
+
+  - id: david
+    name: "David Bauer"
+    location: location-c
+    color: emerald-500
+    icon: User
+    url: "https://example.com/people/david"
+
+swarms:
+  # Central Team - Unique color
+  - id: central-team
+    name: "Central Team"
+    color: slate-800
+    icon: globe
+    url: "https://example.com/swarm/central-team"
+    roles:
+      - person: klaus
+        role: leader
+      - person: sabine
+        role: leader
+      - person: dieter
+        role: leader
+      - person: ursula
+        role: leader
+
+  # Sub Teams - Each has unique color, shared with leader and members
+  - id: team-alpha
+    name: "Team Alpha"
+    color: sky-500
+    icon: Cpu
+    url: "https://example.com/swarm/team-alpha"
+    roles:
+      - person: klaus
+        role: leader
+      - person: maria
+        role: member
+      - person: lisa
+        role: member
+      - person: julia
+        role: member
+
+  - id: team-beta
+    name: "Team Beta"
+    color: amber-500
+    icon: Droplets
+    url: "https://example.com/swarm/team-beta"
+    roles:
+      - person: sabine
+        role: leader
+      - person: thomas-m
+        role: member
+      - person: markus-h
+        role: member
+      - person: alex
+        role: member
+
+  - id: team-gamma
+    name: "Team Gamma"
+    color: violet-500
+    icon: Layers
+    url: "https://example.com/swarm/team-gamma"
+    roles:
+      - person: dieter
+        role: leader
+      - person: anna-m
+        role: member
+      - person: sarah
+        role: member
+      - person: clara
+        role: member
+
+  - id: team-delta
+    name: "Team Delta"
+    color: emerald-500
+    icon: badge-check
+    url: "https://example.com/swarm/team-delta"
+    roles:
+      - person: ursula
+        role: leader
+      - person: peter
+        role: member
+      - person: michael
+        role: member
+      - person: david
+        role: member
