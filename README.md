@@ -55,7 +55,7 @@ Edit `/public/svarms.json` to specify which YAML file should be loaded by defaul
 
 ```json
 {
-  "default": "/svarms/sak.yaml"
+  "default": "/svarms/default-svarm.yaml"
 }
 ```
 
